@@ -15,3 +15,39 @@
 /* https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2000px-Flag_of_Spain.svg.png */
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+
+.container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    height: 400px;
+}
+
+.container i{
+    font-size: 50px;
+}
+
+.freccia{
+    align-self: center;
+    padding: 0 10px;
+}
+
+footer{
+    text-align: center;
+}

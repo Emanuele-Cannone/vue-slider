@@ -21,7 +21,7 @@
         <div class="container">
 
             <div class="freccia" id="sx">
-                <i class="fas fa-arrow-circle-left"></i>
+                <i @click='precedente()' class="fas fa-arrow-circle-left"></i>
             </div>
                       
             <div id="box-bandiera">
@@ -29,17 +29,17 @@
             </div>
             
             <div class="freccia" id="dx">
-                <i @click:successivo() class="fas fa-arrow-circle-right"></i>
+                <i @click='successivo()' class="fas fa-arrow-circle-right"></i>
             </div>
         </div>
-
+        
     </main>
-
+    
     <footer>
-
+        
         <h2>paese bandiera</h2>
         <h2>{{ message }}</h2>
-
+        
     </footer>
 
     <script src="vue/script.js"></script>

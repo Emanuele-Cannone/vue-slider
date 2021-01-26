@@ -1,8 +1,7 @@
 var app = new Vue({
-    el: '#box-bandiera',
+    el: '.container',
     data:{
         indiceNumerico: 0,
-        message: 'indiceNumerico',
         src: [
             'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2000px-Flag_of_Spain.svg.png',
             'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg',
@@ -14,6 +13,9 @@ var app = new Vue({
     methods:{
         successivo(){
             this.indiceNumerico++;
+        },
+        precedente(){
+            this.indiceNumerico--;
         }
     },
     

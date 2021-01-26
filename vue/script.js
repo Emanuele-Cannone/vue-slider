@@ -13,6 +13,7 @@ var app = new Vue({
     methods:{
         successivo(){
             this.indiceNumerico++;
+            (this.indiceNumerico == src.length - 1) ? '' this.indiceNumerico = 0;
         },
         precedente(){
             this.indiceNumerico--;

@@ -18,30 +18,33 @@
 
     <main>
 
-        <div class="container">
+        <div class="slider-bandiere">
 
             <div class="freccia" id="sx">
                 <i @click='precedente()' class="fas fa-arrow-circle-left"></i>
             </div>
                       
             <div id="box-bandiera">
-                <img :src="src[indiceNumerico]" alt="">
+                <img :src="src[indiceNumerico]" :alt="alt[indiceNumerico]">
             </div>
             
             <div class="freccia" id="dx">
                 <i @click='successivo()' class="fas fa-arrow-circle-right"></i>
             </div>
-        </div>
-        
-    </main>
-    
-    <footer>
-        
-        <h2>paese bandiera</h2>
-        <h2>{{ message }}</h2>
-        
-    </footer>
+            
 
+        </div>
+
+        <div class="descrizione-bandiere">
+            <div class="punti" >
+                <i v-for="(element, i) in src" class="fas fa-circle" :id="(i == indiceNumerico) ? 'blu' : '' " @click="scegliBandiera(i)"></i>
+            </div>
+
+            <div class="descrizione">
+                {{ alt[indiceNumerico] }}
+            </div>
+        </div>
+    </main>
     <script src="vue/script.js"></script>
 
 </body>

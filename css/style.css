@@ -1,20 +1,3 @@
-
-    /* svizzera */
-/* https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg */
-
-    /* italia */
-/* https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png */
-
-    /* germania */
-/* https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg */
-
-    /* francia */
-/* https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg */
-
-    /* spagna */
-/* https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2000px-Flag_of_Spain.svg.png */
-
-
 *{
     margin: 0;
     padding: 0;
@@ -27,8 +10,7 @@ header{
     padding-top: 30px;
 }
 
-
-.container{
+.slider-bandiere{
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -39,7 +21,7 @@ img{
     height: 400px;
 }
 
-.container i{
+.slider-bandiere i{
     font-size: 50px;
 }
 
@@ -48,6 +30,18 @@ img{
     padding: 0 10px;
 }
 
-footer{
+.descrizione-bandiere{
     text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.punti > i{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#blu{
+    color: blue;
 }

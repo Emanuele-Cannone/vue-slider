@@ -13,10 +13,11 @@ var app = new Vue({
     methods:{
         successivo(){
             this.indiceNumerico++;
-            (this.indiceNumerico == src.length - 1) ? '' this.indiceNumerico = 0;
+            if (this.indiceNumerico == this.src.length - 1) this.indiceNumerico = 0;
         },
         precedente(){
             this.indiceNumerico--;
+            if (this.indiceNumerico < 0) this.indiceNumerico = this.src.length - 1;
         }
     },
     

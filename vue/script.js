@@ -30,7 +30,19 @@ var app = new Vue({
         },
         scegliBandiera(i){
             this.indiceNumerico = i;
-        }
+        },
+        funzioneProva(e) {
+            if (e.keyCode == 39) {
+                this.successivo();
+            } else if (e.keyCode == 37) {
+                this.precedente();
+            }
+    }
     },
-    
+    mounted() {
+        window.addEventListener('keyup', function(e){
+            app.funzioneProva(e)
+        });
+    }
 });
+
